@@ -3,6 +3,7 @@ import styles from './style';
 import { withStyles } from '@material-ui/core/styles';
 import TabPanel from './TabPanel';
 import {AppBar, Tab, Tabs} from '@material-ui/core'
+import BlogCard from "../Card/BlogCard";
 
 function a11yProps(index) {
     return {
@@ -17,7 +18,7 @@ function a11yProps(index) {
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
-  
+    const blogNumber = new Array(10);
     return (
       <div className={classes.root}>
         <AppBar position="static" color='transparent'>
@@ -31,7 +32,13 @@ function a11yProps(index) {
           Home
         </TabPanel>
         <TabPanel value={value} index={1}>
-          Blog
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
         </TabPanel>
         <TabPanel value={value} index={2}>
           About Us
