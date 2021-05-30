@@ -25,7 +25,7 @@ export default function BlogCard() {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="contemplative-reptile.jpg"
+                    image='https://www.diagnosticcentres.in/uploads/blogpost/Untitled-1.jpg'
                     title="Contemplative Reptile"
                 />
                 <CardContent>
